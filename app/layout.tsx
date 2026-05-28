@@ -1,17 +1,29 @@
-import React from "react";
-import Navbar from "./components/Navbar";
+// import React from "react";
+// import Navbar from "./components/Navbar";
 
-function RootLayout({children} : {
-  children: React.ReactNode
-}){
+// function RootLayout({children} : {
+//   children: React.ReactNode
+// }){
+//   return (
+//     <html>
+//       <body>
+//         <Navbar />
+//         {children}
+//       </body>
+//     </html>
+//   );
+// }
+
+// export default RootLayout;
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html>
-      <body>
-        <Navbar />
-        {children}
-      </body>
+    <html lang="en">
+      <body>{children}</body>
     </html>
   );
 }
-
-export default RootLayout;
